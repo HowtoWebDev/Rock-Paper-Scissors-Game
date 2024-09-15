@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+    to right bottom,
+    rgb(0, 31, 131),
+    rgb(192, 0, 189)
+  );
+}
+.wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    border: 3px solid rgb(201, 201, 201);
+    border-radius: 2em;
+    padding: 5em 3em;
+}
+h1{
+    font-size: 3em;
+}
+h3{
+    color: rgb(109, 153, 255);
+    font-size: 2em;
+}
+#choices{
+    display: flex;
+    gap: 1em;
+}
+#choices button{
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#choices button:hover{
+    background-color: white;
+    border: 3px solid rgb(109, 153, 255);
+    transform: scale(1.05);
+}
+#player-choice,
+#computer-choice{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+#resultDisplay{
+    font-size: 3.5em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    #choices button {
+        font-size: 2.5em;
+    }
+
+    #player-choice,
+    #computer-choice {
+        font-size: 1.5em;
+    }
+
+    #resultDisplay {
+        font-size: 2.5em;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+    .wrapper{
+        gap: 1em;
+    }
+    #choices button {
+        font-size: 1.5em;
+    }
+    #choices{
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    #player-choice,
+    #computer-choice {
+        font-size: 1.2em;
+    }
+
+    #resultDisplay {
+        font-size: 1.5em;
+        padding: 5px 20px;
+    }
+}
+@media (max-width: 400px) {
+    .wrapper{
+        padding: 1em;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    #choices button {
+        font-size: 1.5em;
+    }
+
+    #player-choice,
+    #computer-choice {
+        font-size: 1.2em;
+    }
+
+    #resultDisplay {
+        font-size: 1.5em;
+        padding: 5px 20px;
+    }
+}
